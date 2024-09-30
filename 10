@@ -1,0 +1,19 @@
+import java.util.Scanner;  
+  
+public class Lab2Task10 {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+          
+        System.out.print("Enter monthly saving amount: ");  
+        double monthlySaving = scanner.nextDouble();  
+          
+        double monthlyInterestRate = 0.05 / 12;  
+        double accountValue = monthlySaving;  
+          
+        for (int i = 1; i <= 6; i++) {  
+            accountValue += accountValue * monthlyInterestRate + monthlySaving;  
+        }  
+          
+        System.out.printf("Account value after the sixth month: %.2f\n", accountValue);  
+    }  
+}
