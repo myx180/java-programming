@@ -1,0 +1,24 @@
+import java.util.Scanner;  
+  
+public class Lab2Task12 {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+          
+        System.out.print("Enter an integer: ");  
+        int number = scanner.nextInt();  
+          
+        double payIncrease;  
+        if (number % 5 == 0) {  
+            payIncrease = 0.03;  
+            System.out.println("HiFive");  
+        } else if (number % 2 == 0) {  
+            payIncrease = 0.01;  
+            System.out.println("HiEven");  
+        } else {  
+            payIncrease = 0.0; // No increase by default  
+        }  
+          
+        // For demonstration purposes, we print the pay increase percentage  
+        System.out.printf("Pay increase: %.2f%%\n", payIncrease * 100);  
+    }  
+}
