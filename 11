@@ -1,0 +1,14 @@
+import java.util.Scanner;  
+  
+public class Lab2Task11 {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+          
+        System.out.print("Enter the price: ");  
+        double price = scanner.nextDouble();  
+          
+        double tax = price * 0.06;  
+          
+        System.out.printf("Sales tax: %.2f\n", tax);  
+    }  
+}
