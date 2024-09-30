@@ -1,0 +1,25 @@
+import java.util.Scanner; // Import Scanner class from java.util  
+  
+public class ReadingFromKeyboard {  
+    public static void main(String[] args) {  
+        Scanner input = new Scanner(System.in);  
+  
+        // Read a Byte value  
+        System.out.print("Enter a Byte value: ");  
+        byte byteValue = input.nextByte();  
+        System.out.println("The byte value is: " + byteValue);  
+  
+        // Read a Short value  
+        System.out.print("Enter a Short value: ");  
+        short shortValue = input.nextShort();  
+        System.out.println("The short value is: " + shortValue);  
+  
+        // Read a Float value  
+        System.out.print("Enter a Float value: ");  
+        float floatValue = input.nextFloat();  
+        System.out.println("The float value is: " + floatValue);  
+  
+        // Close the Scanner to free up resources  
+        input.close();  
+    }  
+}
