@@ -1,0 +1,21 @@
+import java.util.Scanner;  
+  
+public class Lab2Task4 {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+  
+        // 输入半径和长度  
+        System.out.print("Enter radius: ");  
+        double radius = scanner.nextDouble();  
+        System.out.print("Enter length: ");  
+        double length = scanner.nextDouble();  
+  
+        // 计算面积和体积  
+        double area = Math.PI * radius * radius;  
+        double volume = area * length;  
+  
+        // 输出结果  
+        System.out.printf("Area: %.2f\n", area);  
+        System.out.printf("Volume: %.2f\n", volume);  
+    }  
+}
