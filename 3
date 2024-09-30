@@ -1,0 +1,12 @@
+import java.util.Scanner;  
+public class Lab2Task3 {  
+    public static void main(String[] args) {  
+        // 如果今天是星期二，计算100天后的星期  
+        int days = 100;  
+        int dayOfWeekAfter100Days = (2 + days % 7) % 7; // 星期二是2（0=星期日，1=星期一，...，6=星期六）  
+  
+        // 输出结果（将数字转换为对应的星期）  
+        String[] daysOfWeek = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};  
+        System.out.println("The day in 100 days is: " + daysOfWeek[dayOfWeekAfter100Days]);  
+    }  
+}
