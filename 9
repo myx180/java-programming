@@ -1,0 +1,26 @@
+import java.util.Scanner;  
+  
+public class Lab2Task9 {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+  
+        // Define the monthly interest rate  
+        double monthlyInterestRate = 0.05 / 12;  
+  
+        // Prompt the user to enter the number of months  
+        System.out.print("Enter the number of months: ");  
+        int months = scanner.nextInt();  
+  
+        // Initial savings amount  
+        double savings = 100;  
+  
+        // Calculate the compound value  
+        double compoundValue = savings;  
+        for (int i = 1; i <= months; i++) {  
+            compoundValue += compoundValue * monthlyInterestRate;  
+        }  
+  
+        // Display the compound value  
+        System.out.printf("The compound value after %d months is: $%.2f\n", months, compoundValue);  
+    }  
+}
