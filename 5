@@ -1,0 +1,22 @@
+import java.util.Scanner;  
+  
+public class Lab2Task5 {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+  
+        // 输入小计和费率  
+        System.out.print("Enter subtotal: ");  
+        double subtotal = scanner.nextDouble();  
+        System.out.print("Enter gratuity rate (e.g., 15 for 15%%): ");  
+        int gratuityRate = scanner.nextInt();  
+        double rate = gratuityRate / 100.0;  
+  
+        // 计算小费和总额  
+        double gratuity = subtotal * rate;  
+        double total = subtotal + gratuity;  
+  
+        // 输出结果  
+        System.out.printf("Gratuity: $%.2f\n", gratuity);  
+        System.out.printf("Total: $%.2f\n", total);  
+    }  
+}
